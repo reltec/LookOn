@@ -4,7 +4,7 @@
 package com.reltecsoft.lookon.domain;
 
 import com.reltecsoft.lookon.domain.MediaDataOnDemand;
-import com.reltecsoft.lookon.domain.PersonDataOnDemand;
+import com.reltecsoft.lookon.domain.Person;
 import com.reltecsoft.lookon.domain.UserWork;
 import com.reltecsoft.lookon.domain.UserWorkDataOnDemand;
 import com.reltecsoft.lookon.repository.UserWorkRepository;
@@ -34,9 +34,6 @@ privileged aspect UserWorkDataOnDemand_Roo_DataOnDemand {
     MediaDataOnDemand UserWorkDataOnDemand.mediaDataOnDemand;
     
     @Autowired
-    PersonDataOnDemand UserWorkDataOnDemand.personDataOnDemand;
-    
-    @Autowired
     UserWorkService UserWorkDataOnDemand.userWorkService;
     
     @Autowired
@@ -52,6 +49,7 @@ privileged aspect UserWorkDataOnDemand_Roo_DataOnDemand {
         setPassportDate(obj, index);
         setPassportNum(obj, index);
         setPassportWhere(obj, index);
+        setPerson(obj, index);
         setPersonality(obj, index);
         setSkills(obj, index);
         setTaxNumber(obj, index);
@@ -117,6 +115,11 @@ privileged aspect UserWorkDataOnDemand_Roo_DataOnDemand {
             passportWhere = passportWhere.substring(0, 50);
         }
         obj.setPassportWhere(passportWhere);
+    }
+    
+    public void UserWorkDataOnDemand.setPerson(UserWork obj, int index) {
+        Person person = null;
+        obj.setPerson(person);
     }
     
     public void UserWorkDataOnDemand.setPersonality(UserWork obj, int index) {
