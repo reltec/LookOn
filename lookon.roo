@@ -1,0 +1,58 @@
+// Creating project
+project --topLevelPackage com.reltecsoft.lookon --projectName lookon
+
+// Setting up JPA and DBRE
+jpa setup --provider HIBERNATE --database MSSQL --databaseName lookon --hostName 127.0.0.1 --userName lookon --password lookon
+database properties set --key database.url --value jdbc:jtds:sqlserver://127.0.0.1:1433/lookon;instance=SQLSERV
+database reverse engineer --schema dbo --activeRecord false --excludeTables sysdiagrams --testAutomatically false  --includeNonPortableAttributes --package ~.domain
+
+// Add integration tests
+test integration --entity ~.domain.DtChatRole
+test integration --entity ~.domain.DtChatStatus
+test integration --entity ~.domain.DtChatType
+test integration --entity ~.domain.DtCommentStatus
+test integration --entity ~.domain.DtCommunityRole
+test integration --entity ~.domain.DtCompanyStatus
+test integration --entity ~.domain.DtMediaType
+test integration --entity ~.domain.DtNotesType
+test integration --entity ~.domain.DtPersonActivityStatus
+test integration --entity ~.domain.DtPersonNetworkStatus
+test integration --entity ~.domain.DtPersonType
+test integration --entity ~.domain.DtVacancyStatus
+test integration --entity ~.domain.DtWorkStatus
+
+// Create pepository layer
+repository jpa --interface ~.repository.ChatRoleRepository --entity ~.domain.DtChatRole
+repository jpa --interface ~.repository.ChatStatusRepository --entity ~.domain.DtChatStatus
+repository jpa --interface ~.repository.ChatTypeRepository --entity ~.domain.DtChatType
+repository jpa --interface ~.repository.CommentStatusRepository --entity ~.domain.DtCommentStatus
+repository jpa --interface ~.repository.CommunityRoleRepository --entity ~.domain.DtCommunityRole
+repository jpa --interface ~.repository.CompanyStatusRepository --entity ~.domain.DtCompanyStatus
+repository jpa --interface ~.repository.MediaTypeRepository --entity ~.domain.DtMediaType
+repository jpa --interface ~.repository.NotesTypeRepository --entity ~.domain.DtNotesType
+repository jpa --interface ~.repository.PersonActivityStatusRepository --entity ~.domain.DtPersonActivityStatus
+repository jpa --interface ~.repository.PersonNetworkStatusRepository --entity ~.domain.DtPersonNetworkStatus
+repository jpa --interface ~.repository.PersonTypeRepository --entity ~.domain.DtPersonType
+repository jpa --interface ~.repository.VacancyStatusRepository --entity ~.domain.DtVacancyStatus
+repository jpa --interface ~.repository.WorkStatusRepository --entity ~.domain.DtWorkStatus
+
+// Create service layer
+service type --interface ~.service.ChatRole --entity ~.domain.DtChatRole
+service type --interface ~.service.ChatStatusService --entity ~.domain.DtChatStatus
+service type --interface ~.service.ChatTypeService --entity ~.domain.DtChatType
+service type --interface ~.service.CommentStatusService --entity ~.domain.DtCommentStatus
+service type --interface ~.service.CommunityRoleService --entity ~.domain.DtCommunityRole
+service type --interface ~.service.CompanyStatusService --entity ~.domain.DtCompanyStatus
+service type --interface ~.service.MediaTypeService --entity ~.domain.DtMediaType
+service type --interface ~.service.NotesTypeService --entity ~.domain.DtNotesType
+service type --interface ~.service.PersonActivityStatusService --entity ~.domain.DtPersonActivityStatus
+service type --interface ~.service.PersonNetworkStatusService --entity ~.domain.DtPersonNetworkStatus
+service type --interface ~.service.PersonTypeService --entity ~.domain.DtPersonType
+service type --interface ~.service.VacancyStatusService --entity ~.domain.DtVacancyStatus
+service type --interface ~.service.WorkStatusService --entity ~.domain.DtWorkStatus
+
+// Add web layer
+web mvc setup
+web mvc all --package ~.web
+// Quit
+q
