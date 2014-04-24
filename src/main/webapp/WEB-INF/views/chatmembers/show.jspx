@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_reltecsoft_lookon_domain_ChatMember" object="${chatmember}" path="/chatmembers" z="Rr9oViMZ56EZ0eSE25y6TQvHbwI=">
+        <field:display field="chatId" id="s_com_reltecsoft_lookon_domain_ChatMember_chatId" object="${chatmember}" z="2u77nFDLkS9o5yxcihH8wPxy1bM="/>
+        <field:display field="roleId" id="s_com_reltecsoft_lookon_domain_ChatMember_roleId" object="${chatmember}" z="e8r9KNLZ3OFxa24iqjoVBTOiODM="/>
+        <field:display field="inviterId" id="s_com_reltecsoft_lookon_domain_ChatMember_inviterId" object="${chatmember}" z="89YZllnzkx5FjmtP+IaAAoI0nPk="/>
+        <field:display field="personId" id="s_com_reltecsoft_lookon_domain_ChatMember_personId" object="${chatmember}" z="f///m9z3Qo3jyWKxbywKiFyVt+4="/>
+    </page:show>
+</div>

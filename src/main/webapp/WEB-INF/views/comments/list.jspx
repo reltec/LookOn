@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_reltecsoft_lookon_domain_Comment" items="${comments}" z="sEk6ji5ycz1sQdn9Ef3H9jMtnfs=">
+        <table:table data="${comments}" id="l_com_reltecsoft_lookon_domain_Comment" path="/comments" z="Nx/ohoG6bRek3wY42qCehZ4Je7A=">
+            <table:column id="c_com_reltecsoft_lookon_domain_Comment_statusId" property="statusId" z="FWKHwKlAWs+Np1+/S3tK5XmFsxM="/>
+            <table:column id="c_com_reltecsoft_lookon_domain_Comment_mediaId" property="mediaId" z="sD4vEBxPkh6NgGsJmGGuIdcKeYM="/>
+            <table:column id="c_com_reltecsoft_lookon_domain_Comment_personId" property="personId" z="Nbf5z1Ev4c2T2jyyZ633W/oP8cw="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_reltecsoft_lookon_domain_DtMediaType" items="${dtmediatypes}" z="iwBNlvtkxTjMwZ72AYBB3G510pU=">
+        <table:table data="${dtmediatypes}" id="l_com_reltecsoft_lookon_domain_DtMediaType" path="/dtmediatypes" z="+tcMd5vUqy+OfKD4GCqfz3djq0Y=">
+            <table:column id="c_com_reltecsoft_lookon_domain_DtMediaType_typeName" property="typeName" z="nRqzpZYNOeYoKhVCfeFpPdGERhs="/>
+        </table:table>
+    </page:list>
+</div>

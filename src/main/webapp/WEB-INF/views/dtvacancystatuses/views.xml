@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="dtvacancystatuses/list">
+        <put-attribute name="body" value="/WEB-INF/views/dtvacancystatuses/list.jspx"/>
+    </definition>
+<definition extends="default" name="dtvacancystatuses/show">
+        <put-attribute name="body" value="/WEB-INF/views/dtvacancystatuses/show.jspx"/>
+    </definition>
+<definition extends="default" name="dtvacancystatuses/create">
+        <put-attribute name="body" value="/WEB-INF/views/dtvacancystatuses/create.jspx"/>
+    </definition>
+<definition extends="default" name="dtvacancystatuses/update">
+        <put-attribute name="body" value="/WEB-INF/views/dtvacancystatuses/update.jspx"/>
+    </definition>
+</tiles-definitions>

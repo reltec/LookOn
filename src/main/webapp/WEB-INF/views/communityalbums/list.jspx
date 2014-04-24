@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_reltecsoft_lookon_domain_CommunityAlbum" items="${communityalbums}" z="QTHeKdyKbBjtWC9tNLwwwhLViXI=">
+        <table:table data="${communityalbums}" id="l_com_reltecsoft_lookon_domain_CommunityAlbum" path="/communityalbums" z="391mJW5Eom8RjKjvyAkZrklfVOo=">
+            <table:column id="c_com_reltecsoft_lookon_domain_CommunityAlbum_albumId" property="albumId" z="JyjjISTVByyPOgBGa5GNGOHcQZM="/>
+            <table:column id="c_com_reltecsoft_lookon_domain_CommunityAlbum_communityId" property="communityId" z="NyFaH5oCUlTPaDf9PCEApXp18Yk="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_reltecsoft_lookon_domain_Work" items="${works}" z="LIOO/HVyt/m9a8heeqAwPVgkQ9o=">
+        <table:table data="${works}" id="l_com_reltecsoft_lookon_domain_Work" path="/works" z="8HKluNP1Ckm0C3xbWzuItCb4MfM=">
+            <table:column id="c_com_reltecsoft_lookon_domain_Work_statusId" property="statusId" z="IewjGu+/tKLdjgojS+MqUlNuuzs="/>
+            <table:column id="c_com_reltecsoft_lookon_domain_Work_companyId" property="companyId" z="zywIxaFdPgmRrrwbOyvG1ibJad0="/>
+            <table:column id="c_com_reltecsoft_lookon_domain_Work_workspaceId" property="workspaceId" z="CvX69XrSRU8dGZUrUXolxg/CmNs="/>
+        </table:table>
+    </page:list>
+</div>

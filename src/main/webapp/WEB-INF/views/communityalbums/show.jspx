@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_reltecsoft_lookon_domain_CommunityAlbum" object="${communityalbum}" path="/communityalbums" z="i77G8mp8fwhYvUNXaXOZmHTQc/U=">
+        <field:display field="albumId" id="s_com_reltecsoft_lookon_domain_CommunityAlbum_albumId" object="${communityalbum}" z="LW1zq0TMmeR7F/ZDNOok4C4RE/c="/>
+        <field:display field="communityId" id="s_com_reltecsoft_lookon_domain_CommunityAlbum_communityId" object="${communityalbum}" z="FHn2hzGlrfifoLT1a4h1LDfwXrg="/>
+    </page:show>
+</div>

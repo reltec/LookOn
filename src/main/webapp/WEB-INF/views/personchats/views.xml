@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="personchats/list">
+        <put-attribute name="body" value="/WEB-INF/views/personchats/list.jspx"/>
+    </definition>
+<definition extends="default" name="personchats/show">
+        <put-attribute name="body" value="/WEB-INF/views/personchats/show.jspx"/>
+    </definition>
+<definition extends="default" name="personchats/create">
+        <put-attribute name="body" value="/WEB-INF/views/personchats/create.jspx"/>
+    </definition>
+<definition extends="default" name="personchats/update">
+        <put-attribute name="body" value="/WEB-INF/views/personchats/update.jspx"/>
+    </definition>
+</tiles-definitions>

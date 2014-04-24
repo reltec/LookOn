@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_reltecsoft_lookon_domain_PersonFriend" object="${personfriend}" path="/personfriends" z="3Yf9PTbipL5+mevQonUC+/KpmTM=">
+        <field:display field="typeId" id="s_com_reltecsoft_lookon_domain_PersonFriend_typeId" object="${personfriend}" z="BQF4TqYyqRGX/zVRXsxsTPaiuRs="/>
+        <field:display field="friendId" id="s_com_reltecsoft_lookon_domain_PersonFriend_friendId" object="${personfriend}" z="D78ODWcFYY/yu//Qi5FduLsXCKk="/>
+        <field:display field="personId" id="s_com_reltecsoft_lookon_domain_PersonFriend_personId" object="${personfriend}" z="yCTqApWAvtilATlHw3ZXrk2fbNQ="/>
+    </page:show>
+</div>

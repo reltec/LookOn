@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_reltecsoft_lookon_domain_Community" object="${community}" path="/communitys" z="fnOCSxGR11ZXm1pI9v0dGsc+FtY=">
+        <field:display field="mediaId" id="s_com_reltecsoft_lookon_domain_Community_mediaId" object="${community}" z="9QplTDMtLteTEB3qXvoBrJ7axm4="/>
+        <field:display field="personId" id="s_com_reltecsoft_lookon_domain_Community_personId" object="${community}" z="FOjs57xeTyf+WbTihVFOLf01sLQ="/>
+        <field:display field="name" id="s_com_reltecsoft_lookon_domain_Community_name" object="${community}" z="ytsjaAlb7KcKuaMZM/mhqMHUPuQ="/>
+        <field:display field="createTime" id="s_com_reltecsoft_lookon_domain_Community_createTime" object="${community}" z="1JbYv49w/JcTV93dSuPW7XkNL28="/>
+        <field:display field="description" id="s_com_reltecsoft_lookon_domain_Community_description" object="${community}" z="+tRxgGXcsOUL5rn5jfiW97DQOkc="/>
+    </page:show>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_reltecsoft_lookon_domain_Album" object="${album}" path="/albums" z="HU/cNxaX0JhBgAh0geTcTNrAv8I=">
+        <field:display field="typeId" id="s_com_reltecsoft_lookon_domain_Album_typeId" object="${album}" z="lXJ/GIl71SzpBv8kNdUWjsn3hH4="/>
+        <field:display field="name" id="s_com_reltecsoft_lookon_domain_Album_name" object="${album}" z="0II1aAoQnn7JumP/GAXKEeB+h90="/>
+        <field:display field="createTime" id="s_com_reltecsoft_lookon_domain_Album_createTime" object="${album}" z="UGOB0qgMPAUR5cy8DWMUPN8lHfI="/>
+    </page:show>
+</div>

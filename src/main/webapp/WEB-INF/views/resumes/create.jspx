@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_reltecsoft_lookon_domain_Resume" modelAttribute="resume" path="/resumes" render="${empty dependencies}" z="Kcd/P0tBR3ZnvWFArlrPNMrIxXQ=">
+        <field:simple field="companyResumes" id="c_com_reltecsoft_lookon_domain_Resume_companyResumes" messageCode="entity_reference_not_managed" messageCodeAttribute="Company Resume" z="S4TXHEQetnu+FFy2Wtl5gsEMMrY="/>
+        <field:simple field="realCompanyResumes" id="c_com_reltecsoft_lookon_domain_Resume_realCompanyResumes" messageCode="entity_reference_not_managed" messageCodeAttribute="Real Company Resume" z="J6WI8XbrERCxkvvZMGdLH7IdgsY="/>
+        <field:simple field="resumeRatings" id="c_com_reltecsoft_lookon_domain_Resume_resumeRatings" messageCode="entity_reference_not_managed" messageCodeAttribute="Resume Rating" z="kz2FazAe8+gsqWCAP32PWB9row0="/>
+        <field:select field="photoId" id="c_com_reltecsoft_lookon_domain_Resume_photoId" itemValue="id" items="${medias}" path="/medias" z="j5tNJGRHl9q2faDQgr2G+J25wnU="/>
+        <field:select field="workspaceId" id="c_com_reltecsoft_lookon_domain_Resume_workspaceId" itemValue="id" items="${workspaces}" path="/workspaces" z="5ymQXiEyrBCC0paX221fxisEUHM="/>
+        <field:input field="education" id="c_com_reltecsoft_lookon_domain_Resume_education" required="true" z="gAEG4nivrTvfJ4g0g7Suq9fAxVE="/>
+        <field:input field="extPosition" id="c_com_reltecsoft_lookon_domain_Resume_extPosition" required="true" z="aWm03d+Zuc7r/idp8mf6PHvwgiQ="/>
+        <field:input field="experience" id="c_com_reltecsoft_lookon_domain_Resume_experience" z="rUyavtlFUHikeCA1b2q7wBbOA6o="/>
+        <field:input field="skills" id="c_com_reltecsoft_lookon_domain_Resume_skills" z="bemirqkvHrpY+NOjq46rXqlbQYw="/>
+        <field:input field="language" id="c_com_reltecsoft_lookon_domain_Resume_language" z="SOrHFy9Nm/4leMDamKnqm+F01jM="/>
+        <field:input field="personality" id="c_com_reltecsoft_lookon_domain_Resume_personality" z="f7cWwP4R8SuSR7WCzMuhi6ELjF4="/>
+        <field:textarea field="hobby" id="c_com_reltecsoft_lookon_domain_Resume_hobby" z="9FhlIf+9fAAD+RFrbkOiXqjnKNY="/>
+        <field:input field="country" id="c_com_reltecsoft_lookon_domain_Resume_country" z="R+GxC7rAkq5Dc/AXYVqVYcp1wLQ="/>
+        <field:input field="city" id="c_com_reltecsoft_lookon_domain_Resume_city" required="true" z="fSL7Sr/qr44/9G4qlEwfb1XYPEU="/>
+        <field:input field="adress" id="c_com_reltecsoft_lookon_domain_Resume_adress" required="true" z="eVODQrDKp1IF4jFQoFWisCU0/3w="/>
+        <field:input field="school" id="c_com_reltecsoft_lookon_domain_Resume_school" required="true" z="s+oRrZ+1Ab6Z6Ql2wRr4af8Oglw="/>
+        <field:input field="university" id="c_com_reltecsoft_lookon_domain_Resume_university" z="o1SHHu6WObMXAKx+bsSdJDlvHKw="/>
+        <field:input field="passportNum" id="c_com_reltecsoft_lookon_domain_Resume_passportNum" z="AMnX+05YxnnbI87V7DVuHUZjtrE="/>
+        <field:input field="passportDate" id="c_com_reltecsoft_lookon_domain_Resume_passportDate" z="h0b0DgRBrkMcUUJo0VWDfjbbwIc="/>
+        <field:input field="passportWhere" id="c_com_reltecsoft_lookon_domain_Resume_passportWhere" z="ujS+dNwEoHDF4wcAotdH0n3wEGQ="/>
+        <field:input field="taxNumber" id="c_com_reltecsoft_lookon_domain_Resume_taxNumber" z="hD9lmo/6mPAMGGb8KInExQF8qIA="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_reltecsoft_lookon_domain_Resume" render="${not empty dependencies}" z="tMCFtR1UxzqFxzDkU3UwEEf0KUY="/>
+</div>

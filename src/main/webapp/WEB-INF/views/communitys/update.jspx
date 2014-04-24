@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_reltecsoft_lookon_domain_Community" modelAttribute="community" path="/communitys" versionField="none" z="SVIhboWBaOQCDIL86F1O4h2FZr8=">
+        <field:simple field="communityAlbums" id="c_com_reltecsoft_lookon_domain_Community_communityAlbums" messageCode="entity_reference_not_managed" messageCodeAttribute="Community Album" z="eucSQxWWAV47BK0y7xXWgcZDR40="/>
+        <field:simple field="communityChats" id="c_com_reltecsoft_lookon_domain_Community_communityChats" messageCode="entity_reference_not_managed" messageCodeAttribute="Community Chat" z="zzym8YA7Zi+kLLmzUWZ/WXgjOV4="/>
+        <field:simple field="communitypeople" id="c_com_reltecsoft_lookon_domain_Community_communitypeople" messageCode="entity_reference_not_managed" messageCodeAttribute="Community Person" z="1yVWnZtHJP/nqB7/h7aer11e2M8="/>
+        <field:select field="mediaId" id="c_com_reltecsoft_lookon_domain_Community_mediaId" itemValue="id" items="${medias}" path="/medias" z="oPutegXj36Sz8/QG9SeY57hXFEg="/>
+        <field:select field="personId" id="c_com_reltecsoft_lookon_domain_Community_personId" itemValue="id" items="${people}" path="/people" z="6M7EG0WXMeBys0UID0FzftG0nXc="/>
+        <field:input field="name" id="c_com_reltecsoft_lookon_domain_Community_name" required="true" z="gYw6Go+N3u/PXLE+ykpoaQ/BYOY="/>
+        <field:input field="createTime" id="c_com_reltecsoft_lookon_domain_Community_createTime" required="true" z="SQmUmBlcek2BXF/XT8NQ/6NMiPg="/>
+        <field:textarea field="description" id="c_com_reltecsoft_lookon_domain_Community_description" required="true" z="6htI1AqtZOw+LhwpshBXaKAe5bc="/>
+    </form:update>
+</div>

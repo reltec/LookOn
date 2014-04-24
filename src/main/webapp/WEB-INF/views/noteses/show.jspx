@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_reltecsoft_lookon_domain_Notes" object="${notes}" path="/noteses" z="jqgyzi32Q/wdPip0sdzKRt1IpWM=">
+        <field:display field="typeId" id="s_com_reltecsoft_lookon_domain_Notes_typeId" object="${notes}" z="DpQMmJDltwgICffmjUiQhR7mhRM="/>
+        <field:display field="mediaId" id="s_com_reltecsoft_lookon_domain_Notes_mediaId" object="${notes}" z="80mL0HdNGIMOsMfOb32LNS0tTVU="/>
+        <field:display field="personId" id="s_com_reltecsoft_lookon_domain_Notes_personId" object="${notes}" z="9FjL5uLV7evY6FlanH/ea07YKPk="/>
+        <field:display field="note" id="s_com_reltecsoft_lookon_domain_Notes_note" object="${notes}" z="dlPtgUF6ym7KPEYHsCVjE7bSvvo="/>
+    </page:show>
+</div>

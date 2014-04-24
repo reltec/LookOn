@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_reltecsoft_lookon_domain_Email" items="${emails}" z="FXZEwtlqVtTL5E8jahjfXlbuzss=">
+        <table:table data="${emails}" id="l_com_reltecsoft_lookon_domain_Email" path="/emails" z="rGm/zPh1X6g/FXgABKA+zD8UKkE=">
+            <table:column id="c_com_reltecsoft_lookon_domain_Email_email" property="email" z="w8vWmdPbrgtQvRtIDObcNhKu0Iw="/>
+        </table:table>
+    </page:list>
+</div>
