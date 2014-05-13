@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <page:show id="ps_com_reltecsoft_lookon_domain_PersonChat" object="${personchat}" path="/personchats" z="glOzKy809J1B8cjVjxIyDhjTfrY=">
-        <field:display field="chatId" id="s_com_reltecsoft_lookon_domain_PersonChat_chatId" object="${personchat}" z="u/HN5+7NAW5vFZH0QAP1lbXKAkA="/>
-        <field:display field="personId" id="s_com_reltecsoft_lookon_domain_PersonChat_personId" object="${personchat}" z="G7bQUE+qKzwjZYJ/+i07nYMa7qg="/>
-    </page:show>
-</div>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:update id="fu_com_reltecsoft_lookon_domain_DtChatRole" modelAttribute="dtChatRole" path="/dtchatroles" versionField="none" z="Y93YhBbt0ggRkFCQh6pKww2dVCU=">
-        <field:simple field="chatMembers" id="c_com_reltecsoft_lookon_domain_DtChatRole_chatMembers" messageCode="entity_reference_not_managed" messageCodeAttribute="Chat Member" z="lmaBSzDm6x0kU1BRvN9jLRx1qBY="/>
-        <field:input field="name" id="c_com_reltecsoft_lookon_domain_DtChatRole_name" z="e/3GIZ/vMyiUWwT2kCSis0OOY+c="/>
-    </form:update>
-</div>
