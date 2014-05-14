@@ -1,0 +1,120 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-14 09:09:00
+project --topLevelPackage com.reltecsoft.lookon --projectName lookon
+jpa setup --provider HIBERNATE --database MSSQL --databaseName lookon --hostName 127.0.0.1 --userName lookon --password lookon
+database properties set --key database.url --value jdbc:jtds:sqlserver://127.0.0.1:1433/lookon;instance=SQLSERV
+database reverse engineer --schema dbo --activeRecord false --excludeTables "money sysdiagrams" --testAutomatically false  --includeNonPortableAttributes --package ~.domain
+test integration --entity ~.domain.DtChatRole
+test integration --entity ~.domain.DtChatStatus
+test integration --entity ~.domain.DtChatType
+test integration --entity ~.domain.DtCommentStatus
+test integration --entity ~.domain.DtCommunityRole
+test integration --entity ~.domain.DtCompanyStatus
+test integration --entity ~.domain.DtMediaType
+test integration --entity ~.domain.DtNotesRole
+test integration --entity ~.domain.DtNotesType
+test integration --entity ~.domain.DtPersonActivityStatus
+test integration --entity ~.domain.DtPersonNetworkStatus
+test integration --entity ~.domain.DtPersonType
+test integration --entity ~.domain.DtVacancyStatus
+test integration --entity ~.domain.DtWorkStatus
+test integration --entity ~.domain.Album
+test integration --entity ~.domain.Chat
+test integration --entity ~.domain.ChatMessage
+test integration --entity ~.domain.Comment
+test integration --entity ~.domain.Community
+test integration --entity ~.domain.Company
+test integration --entity ~.domain.Email
+test integration --entity ~.domain.Media
+test integration --entity ~.domain.Notes
+test integration --entity ~.domain.Person
+test integration --entity ~.domain.Phone
+test integration --entity ~.domain.PrivateMessage
+test integration --entity ~.domain.RealCompany
+test integration --entity ~.domain.Resume
+test integration --entity ~.domain.Vacancy
+test integration --entity ~.domain.Workplace
+test integration --entity ~.domain.Workspace
+test integration --entity ~.domain.ChatMember
+test integration --entity ~.domain.CommunityPerson
+test integration --entity ~.domain.PersonBlacklist
+test integration --entity ~.domain.PersonFriend
+test integration --entity ~.domain.SharedNotes
+repository jpa --interface ~.repository.ChatRoleRepository --entity ~.domain.DtChatRole
+repository jpa --interface ~.repository.ChatStatusRepository --entity ~.domain.DtChatStatus
+repository jpa --interface ~.repository.ChatTypeRepository --entity ~.domain.DtChatType
+repository jpa --interface ~.repository.CommentStatusRepository --entity ~.domain.DtCommentStatus
+repository jpa --interface ~.repository.CommunityRoleRepository --entity ~.domain.DtCommunityRole
+repository jpa --interface ~.repository.CompanyStatusRepository --entity ~.domain.DtCompanyStatus
+repository jpa --interface ~.repository.MediaTypeRepository --entity ~.domain.DtMediaType
+repository jpa --interface ~.repository.NotesRoleRepository --entity ~.domain.DtNotesRole
+repository jpa --interface ~.repository.NotesTypeRepository --entity ~.domain.DtNotesType
+repository jpa --interface ~.repository.PersonActivityStatusRepository --entity ~.domain.DtPersonActivityStatus
+repository jpa --interface ~.repository.PersonNetworkStatusRepository --entity ~.domain.DtPersonNetworkStatus
+repository jpa --interface ~.repository.PersonTypeRepository --entity ~.domain.DtPersonType
+repository jpa --interface ~.repository.VacancyStatusRepository --entity ~.domain.DtVacancyStatus
+repository jpa --interface ~.repository.WorkStatusRepository --entity ~.domain.DtWorkStatus
+repository jpa --interface ~.repository.AlbumRepository --entity ~.domain.Album
+repository jpa --interface ~.repository.ChatRepository --entity ~.domain.Chat
+repository jpa --interface ~.repository.ChatMessageRepository --entity ~.domain.ChatMessage
+repository jpa --interface ~.repository.CommentRepository --entity ~.domain.Comment
+repository jpa --interface ~.repository.CommunityRepository --entity ~.domain.Community
+repository jpa --interface ~.repository.CompanyRepository --entity ~.domain.Company
+repository jpa --interface ~.repository.EmailRepository --entity ~.domain.Email
+repository jpa --interface ~.repository.MediaRepository --entity ~.domain.Media
+repository jpa --interface ~.repository.NotesRepository --entity ~.domain.Notes
+repository jpa --interface ~.repository.PersonRepository --entity ~.domain.Person
+repository jpa --interface ~.repository.PhoneRepository --entity ~.domain.Phone
+repository jpa --interface ~.repository.PrivateMessageRepository --entity ~.domain.PrivateMessage
+repository jpa --interface ~.repository.RealCompanyRepository --entity ~.domain.RealCompany
+repository jpa --interface ~.repository.ResumeRepository --entity ~.domain.Resume
+repository jpa --interface ~.repository.VacancyRepository --entity ~.domain.Vacancy
+repository jpa --interface ~.repository.WorkplaceRepository --entity ~.domain.Workplace
+repository jpa --interface ~.repository.WorkspaceRepository --entity ~.domain.Workspace
+repository jpa --interface ~.repository.ChatMemberRepository --entity ~.domain.ChatMember
+repository jpa --interface ~.repository.CommunityPersonRepository --entity ~.domain.CommunityPerson
+repository jpa --interface ~.repository.PersonBlacklistRepository --entity ~.domain.PersonBlacklist
+repository jpa --interface ~.repository.PersonFriendRepository --entity ~.domain.PersonFriend
+repository jpa --interface ~.repository.SharedNotesRepository --entity ~.domain.SharedNotes
+service type --interface ~.service.ChatRole --entity ~.domain.DtChatRole
+service type --interface ~.service.ChatStatusService --entity ~.domain.DtChatStatus
+service type --interface ~.service.ChatTypeService --entity ~.domain.DtChatType
+service type --interface ~.service.CommentStatusService --entity ~.domain.DtCommentStatus
+service type --interface ~.service.CommunityRoleService --entity ~.domain.DtCommunityRole
+service type --interface ~.service.CompanyStatusService --entity ~.domain.DtCompanyStatus
+service type --interface ~.service.MediaTypeService --entity ~.domain.DtMediaType
+service type --interface ~.service.NotesRoleService --entity ~.domain.DtNotesRole
+service type --interface ~.service.NotesTypeService --entity ~.domain.DtNotesType
+service type --interface ~.service.PersonActivityStatusService --entity ~.domain.DtPersonActivityStatus
+service type --interface ~.service.PersonNetworkStatusService --entity ~.domain.DtPersonNetworkStatus
+service type --interface ~.service.PersonTypeService --entity ~.domain.DtPersonType
+service type --interface ~.service.VacancyStatusService --entity ~.domain.DtVacancyStatus
+service type --interface ~.service.WorkStatusService --entity ~.domain.DtWorkStatus
+service type --interface ~.service.AlbumService --entity ~.domain.Album
+service type --interface ~.service.ChatService --entity ~.domain.Chat
+service type --interface ~.service.ChatMessageService --entity ~.domain.ChatMessage
+service type --interface ~.service.CommentService --entity ~.domain.Comment
+service type --interface ~.service.CommunityService --entity ~.domain.Community
+service type --interface ~.service.CompanyService --entity ~.domain.Company
+service type --interface ~.service.EmailService --entity ~.domain.Email
+service type --interface ~.service.MediaService --entity ~.domain.Media
+service type --interface ~.service.NotesService --entity ~.domain.Notes
+service type --interface ~.service.PersonService --entity ~.domain.Person
+service type --interface ~.service.PhoneService --entity ~.domain.Phone
+service type --interface ~.service.PrivateMessageService --entity ~.domain.PrivateMessage
+service type --interface ~.service.RealCompanyService --entity ~.domain.RealCompany
+service type --interface ~.service.ResumeService --entity ~.domain.Resume
+service type --interface ~.service.VacancyService --entity ~.domain.Vacancy
+service type --interface ~.service.WorkplaceService --entity ~.domain.Workplace
+service type --interface ~.service.WorkspaceService --entity ~.domain.Workspace
+service type --interface ~.service.ChatMemberService --entity ~.domain.ChatMember
+service type --interface ~.service.CommunityPersonService --entity ~.domain.CommunityPerson
+service type --interface ~.service.PersonBlacklistService --entity ~.domain.PersonBlacklist
+service type --interface ~.service.PersonFriendService --entity ~.domain.PersonFriend
+service type --interface ~.service.SharedNotesService --entity ~.domain.SharedNotes
+web mvc setup
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-05-14 09:15:54
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-14 09:15:54
+// script .\lookon.roo
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-05-14 09:15:54
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-05-14 09:25:29
