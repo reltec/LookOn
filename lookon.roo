@@ -42,11 +42,11 @@ test integration --entity ~.domain.Vacancy
 test integration --entity ~.domain.Workplace
 test integration --entity ~.domain.Workspace
 // -- MANY-TO-MANY tables
-//test integration --entity ~.domain.ChatMember
-//test integration --entity ~.domain.CommunityPerson
-//test integration --entity ~.domain.PersonBlacklist
-//test integration --entity ~.domain.PersonFriend
-//test integration --entity ~.domain.SharedNotes
+test integration --entity ~.domain.ChatMember
+test integration --entity ~.domain.CommunityPerson
+test integration --entity ~.domain.PersonBlacklist
+test integration --entity ~.domain.PersonFriend
+test integration --entity ~.domain.SharedNotes
 
 // Create pepository layer
 // -- Directory tables
@@ -84,11 +84,11 @@ repository jpa --interface ~.repository.VacancyRepository --entity ~.domain.Vaca
 repository jpa --interface ~.repository.WorkplaceRepository --entity ~.domain.Workplace
 repository jpa --interface ~.repository.WorkspaceRepository --entity ~.domain.Workspace
 // -- MANY-TO-MANY tables
-//repository jpa --interface ~.repository.ChatMemberRepository --entity ~.domain.ChatMember
-//repository jpa --interface ~.repository.CommunityPersonRepository --entity ~.domain.CommunityPerson
-//repository jpa --interface ~.repository.PersonBlacklistRepository --entity ~.domain.PersonBlacklist
-//repository jpa --interface ~.repository.PersonFriendRepository --entity ~.domain.PersonFriend
-//repository jpa --interface ~.repository.SharedNotesRepository --entity ~.domain.SharedNotes
+repository jpa --interface ~.repository.ChatMemberRepository --entity ~.domain.ChatMember
+repository jpa --interface ~.repository.CommunityPersonRepository --entity ~.domain.CommunityPerson
+repository jpa --interface ~.repository.PersonBlacklistRepository --entity ~.domain.PersonBlacklist
+repository jpa --interface ~.repository.PersonFriendRepository --entity ~.domain.PersonFriend
+repository jpa --interface ~.repository.SharedNotesRepository --entity ~.domain.SharedNotes
 
 // Create service layer
 // -- Directory tables
@@ -126,11 +126,11 @@ service type --interface ~.service.VacancyService --entity ~.domain.Vacancy
 service type --interface ~.service.WorkplaceService --entity ~.domain.Workplace
 service type --interface ~.service.WorkspaceService --entity ~.domain.Workspace
 // -- MANY-TO-MANY tables
-//service type --interface ~.service.ChatMemberService --entity ~.domain.ChatMember
-//service type --interface ~.service.CommunityPersonService --entity ~.domain.CommunityPerson
-//service type --interface ~.service.PersonBlacklistService --entity ~.domain.PersonBlacklist
-//service type --interface ~.service.PersonFriendService --entity ~.domain.PersonFriend
-//service type --interface ~.service.SharedNotesService --entity ~.domain.SharedNotes
+service type --interface ~.service.ChatMemberService --entity ~.domain.ChatMember
+service type --interface ~.service.CommunityPersonService --entity ~.domain.CommunityPerson
+service type --interface ~.service.PersonBlacklistService --entity ~.domain.PersonBlacklist
+service type --interface ~.service.PersonFriendService --entity ~.domain.PersonFriend
+service type --interface ~.service.SharedNotesService --entity ~.domain.SharedNotes
 
 // Add web layer
 web mvc setup
