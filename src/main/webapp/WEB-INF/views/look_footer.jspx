@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- <spring:url value="/" var="home" />
+	<span> <a href="${home}"> <spring:message code="button_home" />
+	</a>
+	</span>
+	<c:if test="${pageContext['request'].userPrincipal != null}">
+		<c:out value=" | " />
+		<span> <spring:url value="/resources/j_spring_security_logout"
+				var="logout" /> <a href="${logout}"> <spring:message
+					code="security_logout" />
+		</a>
+		</span>
+	</c:if>
+
+	<span> <a href="http://springsource.com"
+		title="${fn:escapeXml(sponsored)}"> <img align="right"
+			alt="${fn:escapeXml(sponsored)}" src="${logo}" />
+	</a>
+	</span>-->
+<footer class="footer b-t b-light">
+	<p>LookOn.me © 2014</p>
+</footer>
+

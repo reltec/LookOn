@@ -1,0 +1,69 @@
+<aside class="bg-black lter aside-md hidden-print" id="nav">
+	<section class="vbox">
+		<section class="w-f scrollable">
+			<div xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu"
+				xmlns:jsp="http://java.sun.com/JSP/Page" class="slim-scroll"
+				data-height="auto" data-disable-fade-out="true" data-distance="0"
+				data-size="5px" data-color="#333333">
+
+				<jsp:directive.page contentType="text/html;charset=UTF-8" />
+				<jsp:output omit-xml-declaration="yes" />
+
+				<nav class="nav-primary hidden-xs">
+					<ul class="nav">
+						<li><a href="Profile.html"><i class="fa fa-male"><b
+									class="bg-danger"> <!---->
+								</b> </i> <span>Моя сторінка</span> </a></li>
+						<li><a href="mail.html"> <i class="fa fa-envelope-o"><b
+									class="bg-warning"> <!---->
+								</b></i><span>Повідомлення</span>
+						</a></li>
+						<li><a href="404.html"><i class="fa fa-users"><b
+									class="bg-primary dker"> <!---->
+								</b> </i><span>Друзі</span> </a></li>
+						<li><a href="404.html"><i class="fa fa-thumbs-up"><b
+									class="bg-danger"> <!---->
+								</b></i><span>Новини</span></a></li>
+						<li><a href="404.html"><i class="fa fa-camera"><b
+									class="bg-primary dker"> <!---->
+								</b></i><span>Фото</span> </a></li>
+						<li><a href="404.html"><i class="fa fa-video-camera"><b
+									class="bg-warning"> <!---->
+								</b></i> <span>Відео</span></a></li>
+						<li><a href="404.html"><i class="fa fa-music"><b
+									class="bg-success"> <!----></b> </i><span>Музика</span> </a></li>
+						<li><a href="404.html"><i class="fa fa-pencil"><b
+									class="bg-danger"> <!---->
+								</b></i><span>Записничок</span> </a></li>
+						<li><a href="404.html"> <i class="fa fa-comments-o"><b
+									class="bg-primary dker"> <!---->
+								</b> </i> <span>Групи</span>
+						</a></li>
+						<li><a href="404.html"><i class="fa fa-gear"><b
+									class="bg-warning"> <!---->
+								</b></i><span>Налаштування</span> </a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<footer class="footer lt hidden-xs b-t b-black">
+			<div id="chat" class="dropup">
+				<section class="dropdown-menu on aside-md m-l-n">
+					<!---->
+				</section>
+			</div>
+			<div id="invite" class="dropup">
+				<section class="dropdown-menu on aside-md m-l-n">
+					<!---->
+				</section>
+			</div>
+			<a href="#nav" data-toggle="class:nav-xs"
+				class="pull-right btn btn-sm btn-black btn-icon"><i
+				class="fa fa-angle-left text">
+					<!---->
+			</i> <!----> <i class="fa fa-angle-right text-active"> <!---->
+			</i></a>
+		</footer>
+	</section>
+</aside>
+
